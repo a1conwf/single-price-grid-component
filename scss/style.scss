@@ -1,0 +1,177 @@
+@import "./globals";
+@import "./variables";
+
+//Container
+.container {
+    padding: 7.2rem 3.2rem 6.2rem;
+    display: grid;
+    grid-template-columns: 310px;
+    justify-content: center;
+}
+
+//Our community section
+.our__community {
+    padding: 2.8rem 2.4rem 3.2rem;
+    background-color: #fff;
+    border-radius: 0.5rem 0.5rem 0 0;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+
+    h1 {
+        margin-bottom: 2.4rem;
+    }
+
+    .guarantee__text {
+        margin-bottom: 1.6rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        letter-spacing: -0.19px;
+        color: $lime;
+    }
+
+    .access__text {
+        font-size: 1.4rem;
+        letter-spacing: -0.17px;
+        line-height: 2.6rem;
+        color: $lightBlue;
+    }
+}
+
+//Subscription section
+.subscription {
+    padding: 2.4rem;
+    background-color: $cyan;
+    color: #fff;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+
+    h2 {
+        margin-bottom: 1.8rem;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.4rem;
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            letter-spacing: -0.2px;
+            opacity: 0.5;
+        }
+
+        span {
+            margin-right: 1.1rem;
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 3.741rem;
+            letter-spacing: -0.4px;
+        }
+    }
+
+    .access__text {
+        margin-bottom: 2.6rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: -0.2px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 263px;
+        padding: 1.5rem 0 1.4rem;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+        background-color: $lime;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.87rem;
+        letter-spacing: -0.2px;
+        cursor: pointer;
+    }
+}
+
+//Why us section
+.why__us {
+    padding: 2.4rem 0 2.4rem 2.4rem;
+    background-color: $cyan;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    opacity: 0.5;
+
+    h2 {
+        margin-bottom: 1.8rem;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        letter-spacing: -0.17px;
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.75;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    //Container
+    .container {
+        padding: 0;
+        grid-template-columns: repeat(2, 320px);
+    }
+
+    //Our community section
+    .our__community {
+        padding: 4rem 0 4rem 4rem;
+        grid-column: span 2;
+
+        h1 {
+            font-size: 2.4rem;
+            line-height: 2.806rem;
+            letter-spacing: -0.3px;
+        }
+
+        .guarantee__text {
+            margin-bottom: 1.1rem;
+            font-size: 1.8rem;
+            line-height: 2.104rem;
+            letter-spacing: -0.22px;
+        }
+
+        .access__text {
+            font-size: 1.6rem;
+            letter-spacing: -0.2px;
+            max-width: 555px;
+        }
+    }
+
+    //Subscription section
+    .subscription {
+        padding: 4rem;
+        border-bottom-left-radius: 0.5rem;
+
+        button {
+            max-width: 237px;
+        }
+    }
+
+    //Why us section
+    .why__us {
+        padding: 4rem 0 4rem 4rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+}

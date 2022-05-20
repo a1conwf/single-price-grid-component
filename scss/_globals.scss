@@ -1,0 +1,36 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: #E6EFF5;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2.338rem;
+    letter-spacing: -0.25px;
+    color: $cyan;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 2.104rem;
+    letter-spacing: -0.22px;
+    color: #fff;
+}
